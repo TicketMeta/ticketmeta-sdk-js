@@ -1,0 +1,42 @@
+{
+  "name": "@ticketmeta/sdk",
+  "title": "TicketMeta SDK for JS/TS projects",
+  "version": "0.0.1",
+  "description": "TicketMeta SDK for JS/TS projects",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TicketMeta/ticketmeta-sdk-js.git",
+    "baseUrl": "https://github.com/TicketMeta/ticketmeta-sdk-js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "npx nodemon",
+    "build": "rimraf ./build && tsc",
+    "start": "npm run build && node build/index.js",
+    "test": "test"
+  },
+  "keywords": [
+    "nft"
+  ],
+  "author": {
+    "name": "TicketMeta",
+    "email": "developers@ticketmeta.io"
+  },
+  "license": "Apache-2.0",
+  "readmeFilename": "README.md",
+  "homepage": "https://github.com/TicketMeta/ticketmeta-sdk-js#readme",
+  "bugs": {
+    "url": "https://github.com/TicketMeta/ticketmeta-sdk-js/issues"
+  },
+  "dependencies": {
+    "@metamask/detect-provider": "^2.0.0",
+    "@metamask/sdk": "^0.2.2",
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.16.1",
+    "nodemon": "^2.0.22",
+    "rimraf": "^5.0.0",
+    "ts-node": "^10.9.1"
+  }
+}
